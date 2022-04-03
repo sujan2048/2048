@@ -483,10 +483,10 @@ window.addEventListener('touchend',function(e){
     touchDetect()
 })
 function touchDetect(){
-    if(touchEndX-touchStartX >=40 && (Math.abs(touchStartY-touchEndY)<=10) ) moveRight()
-    if(touchStartX-touchEndX>=40 && (Math.abs(touchStartY-touchEndY)<=10)) moveLeft()
-    if(touchStartY-touchEndY>=40 && (Math.abs(touchStartX-touchEndX)<=10)) moveUp()
-    if(touchEndY-touchStartY >=40 && (Math.abs(touchStartX-touchEndX)<=10)) moveDown()
+    if(touchEndX-touchStartX >=40 && (Math.abs(touchStartY-touchEndY)<=30) ) moveRight()
+    if(touchStartX-touchEndX>=40 && (Math.abs(touchStartY-touchEndY)<=30)) moveLeft()
+    if(touchStartY-touchEndY>=40 && (Math.abs(touchStartX-touchEndX)<=30)) moveUp()
+    if(touchEndY-touchStartY >=40 && (Math.abs(touchStartX-touchEndX)<=30)) moveDown()
 
 }
 createNewTiles()
